@@ -1,2 +1,7 @@
-<button pButton class="bg-blue-600 p-10 text-white" label="test"></button>
-<!--<button pButton label="Button"> </button>-->
+<div class="flex flex-col gap-8 m-4">
+  <button pButton class="custom-button" label="test"></button>
+  <p-dropdown [options]="values" [(ngModel)]="selected" placeholder="Select..." class="custom-dropdown" [style]="{ display: 'flex', width: '20rem' }" ></p-dropdown>
+
+  <p-inputSwitch [(ngModel)]="checked" />
+</div>
+
